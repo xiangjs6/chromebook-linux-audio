@@ -24,3 +24,11 @@ See the [Chrultrabook docs](https://chrultrabook.github.io/docs/docs/firmware/su
 
 # Other Distros
 Other distros will likely work but will require you to manually install packages.
+
+# Issue
+
+1. sound crash
+
+```
+# echo 'options snd_intel_dspcfg dsp_driver=4' > /etc/modprobe.d/alsa.conf
+```
