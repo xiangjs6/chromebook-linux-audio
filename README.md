@@ -27,8 +27,9 @@ Other distros will likely work but will require you to manually install packages
 
 # Issue
 
-1. sound crash
+1. fedora39 no sound
 
+https://fedoraproject.org/wiki/Changes/DefaultPipeWire
 ```
-# echo 'options snd_intel_dspcfg dsp_driver=4' > /etc/modprobe.d/alsa.conf
+$ sudo dnf install --allowerasing pipewire-pulseaudio
 ```
